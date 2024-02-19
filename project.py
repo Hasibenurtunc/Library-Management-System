@@ -4,7 +4,7 @@ class Library:
         self.books = []
 
     def __del__(self):
-        pass  # It's not recommended to use __del__ for resource cleanup, consider using context managers
+        pass  
 
     def list_books(self):
         with open(self.filename, "r") as file:
@@ -38,7 +38,7 @@ class Library:
 
         print(f"Book '{book_name_to_remove}' removed successfully!")
 
-# Create an object named "lib" with "Library" class
+
 lib = Library()
 
 while True:
